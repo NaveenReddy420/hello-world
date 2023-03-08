@@ -11,10 +11,6 @@
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
   <properties>
-     <docker.image.prefix>naveen</docker.image.prefix>
-     <sonar.host.url>http://35.153.67.175:9000/</sonar.host.url>
-  </properties>
-  <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
@@ -30,15 +26,6 @@
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
-    <snapshotRepository>
-      <id>nexusRepo</id>
-      <url>http://52.86.86.69:8081/repository/repositories:sample-snapshots</url>
-    </snapshotRepository>
-
-    <repository>
-      <id>nexusRepo</id>
-      <url>http://52.86.86.69:8081/repository/repositories:sample-releases</url>
-    </repository>
   </distributionManagement>
 
   <build>
